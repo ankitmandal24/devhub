@@ -24,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-66ub100c3c)zf%@2_o!0nhich4c_eyjy!w+iy$xmhun^)m-_kq'
+SECRET_KEY = ''  #Genrate your on secreet key
 # SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 # Application definition
@@ -146,11 +146,11 @@ WSGI_APPLICATION = 'devsearch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'nIBxYZVkWWTGQ3eWcMr0',
-        'HOST': 'containers-us-west-175.railway.app',
-        'PORT': '6057'
+        'NAME': '*******',
+        'USER': '********',
+        'PASSWORD': '**********',
+        'HOST': '****************',
+        'PORT': '****'
     }
 }
 
@@ -188,16 +188,16 @@ USE_TZ = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
+EMAIL_PORT = 
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'mandalankit244@gmail.com'
-EMAIL_HOST_PASSWORD = 'igrdxofydmrxcjar'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'baka244',
-    'API_KEY': '476843461524239',
-    'API_SECRET': 'gAhMXfSqP9oxNUx-GaunsPE8f8Q',
+    'CLOUD_NAME': '',
+    'API_KEY': '',
+    'API_SECRET': '',
     # 'EXCLUDE_DELETE_ORPHANED_MEDIA_PATHS': ('/images/', 'images/profiles')
 }
 
